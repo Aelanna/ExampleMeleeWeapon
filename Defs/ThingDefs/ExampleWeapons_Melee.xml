@@ -62,6 +62,11 @@
             <Mass>0.75</Mass>
         </statBases>
 
+        <!-- Determines stat modifiers given to the pawn that equips this item -->
+        <equippedStatOffsets>
+            <PlantWorkSpeed>0.10</PlantWorkSpeed>
+        </equippedStatOffsets>
+
         <!-- Determines the chance that this item can be generated as a relic -->
         <relicChance>1</relicChance>
 
