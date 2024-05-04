@@ -1,112 +1,112 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!-- Example weapon: machete -->
-    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <!-- Example weapon: machete -->
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 
-        <!-- defNames must be unique across all mods -->
-        <!-- It's generally recommended that you prefix it with your mod name to prevent mod collisions -->
-        <defName>ExampleMeleeWeapon_Machete</defName>
+    <!-- defNames must be unique across all mods -->
+    <!-- It's generally recommended that you prefix it with your mod name to prevent mod collisions -->
+    <defName>ExampleMeleeWeapon_Machete</defName>
 
-        <!-- This is the display name of the weapon. It should be lowercase unless it's a proper name -->
-        <!-- Labels will get automatically capitalized by RimWorld's grammar resolver if necessary -->
-        <label>machete</label>
+    <!-- This is the display name of the weapon. It should be lowercase unless it's a proper name -->
+    <!-- Labels will get automatically capitalized by RimWorld's grammar resolver if necessary -->
+    <label>machete</label>
 
-        <!-- The full description of this weapon. It is seen by players when inspecting the full stat card -->
-        <description>A broad blade meant for cutting vegetation in overgrown environments, machetes can be used as a broad-bladed combat knife in a pinch.</description>
+    <!-- The full description of this weapon. It is seen by players when inspecting the full stat card -->
+    <description>A broad blade meant for cutting vegetation in overgrown environments, machetes can be used as a broad-bladed combat knife in a pinch.</description>
 
-        <!-- Allows this weapon to be used by pawn backstories as a starting possession -->
-        <possessionCount>1</possessionCount>
+    <!-- Allows this weapon to be used by pawn backstories as a starting possession -->
+    <possessionCount>1</possessionCount>
 
-        <!-- Sets the item graphic for this ThingDef -->
-        <!-- For melee weapons, this will be used as the equipped texture as well -->
-        <graphicData>
-            <texPath>ExampleMod/ExampleWeapon_Machete</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-        </graphicData>
+    <!-- Sets the item graphic for this ThingDef -->
+    <!-- For melee weapons, this will be used as the equipped texture as well -->
+    <graphicData>
+      <texPath>ExampleMod/ExampleWeapon_Machete</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
 
-        <!-- Sets an angle offset for when the weapon is equipped -->
-        <!-- At 0 angle, the east side of the texture will be pointed directly at the enemy -->
-        <equippedAngleOffset>-65</equippedAngleOffset>
+    <!-- Sets an angle offset for when the weapon is equipped -->
+    <!-- At 0 angle, the east side of the texture will be pointed directly at the enemy -->
+    <equippedAngleOffset>-65</equippedAngleOffset>
 
-        <!-- Scales the item texture when used in UI elements such as item lists -->
-        <!-- Just like the gladius, machetes are scaled up because their texture is relatively small -->
-        <uiIconScale>1.2</uiIconScale>
+    <!-- Scales the item texture when used in UI elements such as item lists -->
+    <!-- Just like the gladius, machetes are scaled up because their texture is relatively small -->
+    <uiIconScale>1.2</uiIconScale>
 
-        <!-- Sets the tech level of this item -->
-        <techLevel>Medieval</techLevel>
+    <!-- Sets the tech level of this item -->
+    <techLevel>Medieval</techLevel>
 
-        <!-- Determines the "stuff" or type of materials that can be used to craft this item -->
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
-        </stuffCategories>
+    <!-- Determines the "stuff" or type of materials that can be used to craft this item -->
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
 
-        <!-- Determines the amount of "stuff" needed to craft this item -->
-        <costStuffCount>40</costStuffCount>
+    <!-- Determines the amount of "stuff" needed to craft this item -->
+    <costStuffCount>40</costStuffCount>
 
-        <!-- Allows this item to be used for quest rewards -->
-        <thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
+    <!-- Allows this item to be used for quest rewards -->
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
 
-        <!-- Allows this item to be generated on NPCs -->
-        <weaponTags>
-            <li>MedievalMeleeDecent</li>
-        </weaponTags>
+    <!-- Allows this item to be generated on NPCs -->
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
 
-        <!-- Determines base stats for this item -->
-        <statBases>
-            <WorkToMake>10000</WorkToMake>
-            <Mass>0.75</Mass>
-        </statBases>
+    <!-- Determines base stats for this item -->
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>0.75</Mass>
+    </statBases>
 
-        <!-- Determines stat modifiers given to the pawn that equips this item -->
-        <equippedStatOffsets>
-            <PlantWorkSpeed>0.10</PlantWorkSpeed>
-        </equippedStatOffsets>
+    <!-- Determines stat modifiers given to the pawn that equips this item -->
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.10</PlantWorkSpeed>
+    </equippedStatOffsets>
 
-        <!-- Determines the chance that this item can be generated as a relic -->
-        <relicChance>1</relicChance>
+    <!-- Determines the chance that this item can be generated as a relic -->
+    <relicChance>1</relicChance>
 
-        <!-- Determines the melee attacks that are available when this weapon is equipped -->
-        <tools>
-            <li>
-                <label>handle</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>point</label>
-                <capacities>
-                    <li>Stab</li>
-                </capacities>
-                <power>14</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>edge</label>
-                <capacities>
-                    <li>Cut</li>
-                </capacities>
-                <power>14</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
+    <!-- Determines the melee attacks that are available when this weapon is equipped -->
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
 
-        <!-- Determines values used to create the recipe for this item -->
-        <!-- Many required fields are inherited from the parent "BaseMeleeWeapon_Sharp_Quality" -->
-        <recipeMaker>
-            <researchPrerequisite>Smithing</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>2</Crafting>
-            </skillRequirements>
-            <displayPriority>409</displayPriority>
-        </recipeMaker>
-    </ThingDef>
+    <!-- Determines values used to create the recipe for this item -->
+    <!-- Many required fields are inherited from the parent "BaseMeleeWeapon_Sharp_Quality" -->
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <displayPriority>409</displayPriority>
+    </recipeMaker>
+  </ThingDef>
 
 </Defs>
